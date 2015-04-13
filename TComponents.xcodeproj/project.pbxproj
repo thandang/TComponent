@@ -105,6 +105,13 @@
 		75BD18621ADB862300DE6491 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD185B1ADB862300DE6491 /* UIColor+BFPaperColors.m */; };
 		75BD18631ADB862300DE6491 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD185D1ADB862300DE6491 /* UILabel+DynamicHeight.m */; };
 		75BD18641ADB862300DE6491 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD185F1ADB862300DE6491 /* UIView+Util.m */; };
+		75BD18771ADB86A000DE6491 /* BFPaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18661ADB86A000DE6491 /* BFPaperButton.m */; };
+		75BD18781ADB86A000DE6491 /* INSInfiniteScrollBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18691ADB86A000DE6491 /* INSInfiniteScrollBackgroundView.m */; };
+		75BD18791ADB86A000DE6491 /* INSPullToRefreshBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD186B1ADB86A000DE6491 /* INSPullToRefreshBackgroundView.m */; };
+		75BD187A1ADB86A000DE6491 /* INSPinterestPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD186F1ADB86A000DE6491 /* INSPinterestPullToRefresh.m */; };
+		75BD187B1ADB86A000DE6491 /* UIScrollView+INSPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18711ADB86A000DE6491 /* UIScrollView+INSPullToRefresh.m */; };
+		75BD187C1ADB86A000DE6491 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18741ADB86A000DE6491 /* MBProgressHUD.m */; };
+		75BD187D1ADB86A000DE6491 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18761ADB86A000DE6491 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -314,6 +321,21 @@
 		75BD185D1ADB862300DE6491 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
 		75BD185E1ADB862300DE6491 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		75BD185F1ADB862300DE6491 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		75BD18651ADB86A000DE6491 /* BFPaperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperButton.h; sourceTree = "<group>"; };
+		75BD18661ADB86A000DE6491 /* BFPaperButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPaperButton.m; sourceTree = "<group>"; };
+		75BD18681ADB86A000DE6491 /* INSInfiniteScrollBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSInfiniteScrollBackgroundView.h; sourceTree = "<group>"; };
+		75BD18691ADB86A000DE6491 /* INSInfiniteScrollBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSInfiniteScrollBackgroundView.m; sourceTree = "<group>"; };
+		75BD186A1ADB86A000DE6491 /* INSPullToRefreshBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSPullToRefreshBackgroundView.h; sourceTree = "<group>"; };
+		75BD186B1ADB86A000DE6491 /* INSPullToRefreshBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSPullToRefreshBackgroundView.m; sourceTree = "<group>"; };
+		75BD186D1ADB86A000DE6491 /* INSAnimatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSAnimatable.h; sourceTree = "<group>"; };
+		75BD186E1ADB86A000DE6491 /* INSPinterestPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSPinterestPullToRefresh.h; sourceTree = "<group>"; };
+		75BD186F1ADB86A000DE6491 /* INSPinterestPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSPinterestPullToRefresh.m; sourceTree = "<group>"; };
+		75BD18701ADB86A000DE6491 /* UIScrollView+INSPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+INSPullToRefresh.h"; sourceTree = "<group>"; };
+		75BD18711ADB86A000DE6491 /* UIScrollView+INSPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+INSPullToRefresh.m"; sourceTree = "<group>"; };
+		75BD18731ADB86A000DE6491 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		75BD18741ADB86A000DE6491 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		75BD18751ADB86A000DE6491 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		75BD18761ADB86A000DE6491 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +430,12 @@
 		75BD17461ADB811300DE6491 /* ThirdParties */ = {
 			isa = PBXGroup;
 			children = (
+				75BD18651ADB86A000DE6491 /* BFPaperButton.h */,
+				75BD18661ADB86A000DE6491 /* BFPaperButton.m */,
+				75BD18671ADB86A000DE6491 /* INSPullToRefresh */,
+				75BD18721ADB86A000DE6491 /* MBProgressHUD */,
+				75BD18751ADB86A000DE6491 /* Reachability.h */,
+				75BD18761ADB86A000DE6491 /* Reachability.m */,
 				75BD17491ADB850700DE6491 /* fmdb */,
 				75BD17551ADB850700DE6491 /* FMDB_Migration */,
 				75BD175C1ADB850700DE6491 /* FontAwesomeKit */,
@@ -691,6 +719,39 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		75BD18671ADB86A000DE6491 /* INSPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				75BD18681ADB86A000DE6491 /* INSInfiniteScrollBackgroundView.h */,
+				75BD18691ADB86A000DE6491 /* INSInfiniteScrollBackgroundView.m */,
+				75BD186A1ADB86A000DE6491 /* INSPullToRefreshBackgroundView.h */,
+				75BD186B1ADB86A000DE6491 /* INSPullToRefreshBackgroundView.m */,
+				75BD186C1ADB86A000DE6491 /* Pinterest */,
+				75BD18701ADB86A000DE6491 /* UIScrollView+INSPullToRefresh.h */,
+				75BD18711ADB86A000DE6491 /* UIScrollView+INSPullToRefresh.m */,
+			);
+			path = INSPullToRefresh;
+			sourceTree = "<group>";
+		};
+		75BD186C1ADB86A000DE6491 /* Pinterest */ = {
+			isa = PBXGroup;
+			children = (
+				75BD186D1ADB86A000DE6491 /* INSAnimatable.h */,
+				75BD186E1ADB86A000DE6491 /* INSPinterestPullToRefresh.h */,
+				75BD186F1ADB86A000DE6491 /* INSPinterestPullToRefresh.m */,
+			);
+			path = Pinterest;
+			sourceTree = "<group>";
+		};
+		75BD18721ADB86A000DE6491 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				75BD18731ADB86A000DE6491 /* MBProgressHUD.h */,
+				75BD18741ADB86A000DE6491 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -832,6 +893,7 @@
 				75BD18071ADB850700DE6491 /* CBarcodeFormat.mm in Sources */,
 				75BD18311ADB850700DE6491 /* ZXingWidgetController1.m in Sources */,
 				75BD17281ADB80F900DE6491 /* ViewController.m in Sources */,
+				75BD187A1ADB86A000DE6491 /* INSPinterestPullToRefresh.m in Sources */,
 				75BD18291ADB850700DE6491 /* TelResultParser.m in Sources */,
 				75BD18391ADB850700DE6491 /* MeCardParserTests.m in Sources */,
 				75BD18181ADB850700DE6491 /* TextParsedResult.m in Sources */,
@@ -841,6 +903,7 @@
 				75BD18031ADB850700DE6491 /* ShowMapAction.m in Sources */,
 				75BD180D1ADB850700DE6491 /* MultiFormatUPCEANReader.mm in Sources */,
 				75BD17F11ADB850700DE6491 /* FMDBMigrationColumn.m in Sources */,
+				75BD18781ADB86A000DE6491 /* INSInfiniteScrollBackgroundView.m in Sources */,
 				75BD17251ADB80F900DE6491 /* AppDelegate.m in Sources */,
 				75BD18201ADB850700DE6491 /* GeoResultParser.m in Sources */,
 				75BD181D1ADB850700DE6491 /* BookmarkDoCoMoResultParser.m in Sources */,
@@ -850,6 +913,7 @@
 				75BD182E1ADB850700DE6491 /* VCardResultParser.m in Sources */,
 				75BD18271ADB850700DE6491 /* SMSTOResultParser.m in Sources */,
 				75BD18541ADB85F900DE6491 /* TUtils.m in Sources */,
+				75BD18791ADB86A000DE6491 /* INSPullToRefreshBackgroundView.m in Sources */,
 				75BD17FF1ADB850700DE6491 /* CallAction.m in Sources */,
 				75BD18121ADB850700DE6491 /* GeoParsedResult.m in Sources */,
 				75BD181E1ADB850700DE6491 /* EmailAddressResultParser.m in Sources */,
@@ -870,6 +934,7 @@
 				75BD17F21ADB850700DE6491 /* FMDBMigrationManager.m in Sources */,
 				75BD18351ADB850700DE6491 /* BookmarkDoCoMoTests.m in Sources */,
 				75BD18451ADB853D00DE6491 /* TTableView.m in Sources */,
+				75BD18771ADB86A000DE6491 /* BFPaperButton.m in Sources */,
 				75BD17EB1ADB850700DE6491 /* FMDatabase.m in Sources */,
 				75BD18341ADB850700DE6491 /* BizcardResultParserTests.m in Sources */,
 				75BD180A1ADB850700DE6491 /* FormatReader.mm in Sources */,
@@ -890,7 +955,9 @@
 				75BD18601ADB862300DE6491 /* NSData+Util.m in Sources */,
 				75BD182B1ADB850700DE6491 /* UniversalResultParser.m in Sources */,
 				75BD18361ADB850700DE6491 /* EmailAddressResultParserTests.m in Sources */,
+				75BD187C1ADB86A000DE6491 /* MBProgressHUD.m in Sources */,
 				75BD18161ADB850700DE6491 /* SMSParsedResult.m in Sources */,
+				75BD187D1ADB86A000DE6491 /* Reachability.m in Sources */,
 				75BD17F41ADB850700DE6491 /* FAKFoundationIcons.m in Sources */,
 				75BD182F1ADB850700DE6491 /* TwoDDecoderResult.m in Sources */,
 				75BD18041ADB850700DE6491 /* SMSAction.m in Sources */,
@@ -908,6 +975,7 @@
 				75BD18251ADB850700DE6491 /* ResultParser.m in Sources */,
 				75BD181C1ADB850700DE6491 /* BizcardResultParser.m in Sources */,
 				75BD180F1ADB850700DE6491 /* OverlayView.m in Sources */,
+				75BD187B1ADB86A000DE6491 /* UIScrollView+INSPullToRefresh.m in Sources */,
 				75BD182A1ADB850700DE6491 /* TextResultParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
