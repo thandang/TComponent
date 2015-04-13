@@ -1,0 +1,24 @@
+//
+//  TComponents-Prefix.pch
+//  TComponents
+//
+//  Created by Dang Thanh Than on 4/13/15.
+//  Copyright (c) 2015 Than Dang. All rights reserved.
+//
+
+#ifndef TComponents_TComponents_Prefix_pch
+#define TComponents_TComponents_Prefix_pch
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "TUtils.h"
+    #import "TConstants.h"
+    #import "FMDatabase.h"
+
+#endif
+
+
+#endif

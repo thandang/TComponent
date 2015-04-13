@@ -189,6 +189,7 @@
 		3BAC39F117242E5D00473974 /* BigUnsignedInABase.hh in Headers */ = {isa = PBXBuildFile; fileRef = 3BAC39E217242E5D00473974 /* BigUnsignedInABase.hh */; };
 		3BAC39F317242E5D00473974 /* NumberlikeArray.hh in Headers */ = {isa = PBXBuildFile; fileRef = 3BAC39E517242E5D00473974 /* NumberlikeArray.hh */; };
 		753DBA14193F17A700A19907 /* ZXingWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753DBA13193F17A700A19907 /* ZXingWidgetController.m */; };
+		75BD1A861ADBCA5400DE6491 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6038E913DF75BA006F4B51 /* SenTestingKit.framework */; };
 		AA747D9F0F9514B9006C5449 /* ZXingWidget_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ZXingWidget_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		E534594311987396000CB77F /* BarcodeFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E53458B511987396000CB77F /* BarcodeFormat.cpp */; };
@@ -638,6 +639,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BD1A861ADBCA5400DE6491 /* SenTestingKit.framework in Frameworks */,
 				1D6039EC13DF7F62006F4B51 /* libZXingWidget.a in Frameworks */,
 				1D6039F313DF7F9A006F4B51 /* AddressBook.framework in Frameworks */,
 				1D6039F413DF7F9A006F4B51 /* AddressBookUI.framework in Frameworks */,
@@ -1633,6 +1635,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1660,6 +1663,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = NO;
