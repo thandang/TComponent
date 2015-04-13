@@ -98,6 +98,13 @@
 		75BD183C1ADB850700DE6491 /* ZXingTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75BD17E61ADB850700DE6491 /* ZXingTests-Info.plist */; };
 		75BD18451ADB853D00DE6491 /* TTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18441ADB853D00DE6491 /* TTableView.m */; };
 		75BD18481ADB854D00DE6491 /* TGroupTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18471ADB854D00DE6491 /* TGroupTableView.m */; };
+		75BD184C1ADB85D600DE6491 /* TViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD184B1ADB85D600DE6491 /* TViewCell.m */; };
+		75BD18541ADB85F900DE6491 /* TUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18531ADB85F900DE6491 /* TUtils.m */; };
+		75BD18601ADB862300DE6491 /* NSData+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18571ADB862300DE6491 /* NSData+Util.m */; };
+		75BD18611ADB862300DE6491 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD18591ADB862300DE6491 /* NSString+Util.m */; };
+		75BD18621ADB862300DE6491 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD185B1ADB862300DE6491 /* UIColor+BFPaperColors.m */; };
+		75BD18631ADB862300DE6491 /* UILabel+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD185D1ADB862300DE6491 /* UILabel+DynamicHeight.m */; };
+		75BD18641ADB862300DE6491 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BD185F1ADB862300DE6491 /* UIView+Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,6 +300,20 @@
 		75BD18441ADB853D00DE6491 /* TTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTableView.m; sourceTree = "<group>"; };
 		75BD18461ADB854D00DE6491 /* TGroupTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGroupTableView.h; sourceTree = "<group>"; };
 		75BD18471ADB854D00DE6491 /* TGroupTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGroupTableView.m; sourceTree = "<group>"; };
+		75BD184A1ADB85D600DE6491 /* TViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TViewCell.h; sourceTree = "<group>"; };
+		75BD184B1ADB85D600DE6491 /* TViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TViewCell.m; sourceTree = "<group>"; };
+		75BD18521ADB85F900DE6491 /* TUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUtils.h; sourceTree = "<group>"; };
+		75BD18531ADB85F900DE6491 /* TUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUtils.m; sourceTree = "<group>"; };
+		75BD18561ADB862300DE6491 /* NSData+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Util.h"; sourceTree = "<group>"; };
+		75BD18571ADB862300DE6491 /* NSData+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Util.m"; sourceTree = "<group>"; };
+		75BD18581ADB862300DE6491 /* NSString+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
+		75BD18591ADB862300DE6491 /* NSString+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		75BD185A1ADB862300DE6491 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
+		75BD185B1ADB862300DE6491 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
+		75BD185C1ADB862300DE6491 /* UILabel+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DynamicHeight.h"; sourceTree = "<group>"; };
+		75BD185D1ADB862300DE6491 /* UILabel+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DynamicHeight.m"; sourceTree = "<group>"; };
+		75BD185E1ADB862300DE6491 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		75BD185F1ADB862300DE6491 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,9 +355,9 @@
 		75BD171E1ADB80F900DE6491 /* TComponents */ = {
 			isa = PBXGroup;
 			children = (
+				75BD18511ADB85F900DE6491 /* Utils */,
 				75BD18491ADB856000DE6491 /* Views */,
 				75BD17481ADB813200DE6491 /* Components */,
-				75BD17471ADB811D00DE6491 /* Utils */,
 				75BD17461ADB811300DE6491 /* ThirdParties */,
 				75BD17451ADB810700DE6491 /* Connections */,
 				75BD17231ADB80F900DE6491 /* AppDelegate.h */,
@@ -393,13 +414,6 @@
 				75BD176C1ADB850700DE6491 /* ZXingWidget */,
 			);
 			path = ThirdParties;
-			sourceTree = "<group>";
-		};
-		75BD17471ADB811D00DE6491 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		75BD17481ADB813200DE6491 /* Components */ = {
@@ -644,8 +658,37 @@
 		75BD18491ADB856000DE6491 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				75BD184A1ADB85D600DE6491 /* TViewCell.h */,
+				75BD184B1ADB85D600DE6491 /* TViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		75BD18511ADB85F900DE6491 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75BD18551ADB860200DE6491 /* Categories */,
+				75BD18521ADB85F900DE6491 /* TUtils.h */,
+				75BD18531ADB85F900DE6491 /* TUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		75BD18551ADB860200DE6491 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				75BD18561ADB862300DE6491 /* NSData+Util.h */,
+				75BD18571ADB862300DE6491 /* NSData+Util.m */,
+				75BD18581ADB862300DE6491 /* NSString+Util.h */,
+				75BD18591ADB862300DE6491 /* NSString+Util.m */,
+				75BD185A1ADB862300DE6491 /* UIColor+BFPaperColors.h */,
+				75BD185B1ADB862300DE6491 /* UIColor+BFPaperColors.m */,
+				75BD185C1ADB862300DE6491 /* UILabel+DynamicHeight.h */,
+				75BD185D1ADB862300DE6491 /* UILabel+DynamicHeight.m */,
+				75BD185E1ADB862300DE6491 /* UIView+Util.h */,
+				75BD185F1ADB862300DE6491 /* UIView+Util.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -784,6 +827,7 @@
 				75BD17F01ADB850700DE6491 /* FBDMMigration.m in Sources */,
 				75BD18371ADB850700DE6491 /* EmailDoCoMoResultParserTests.m in Sources */,
 				75BD18221ADB850700DE6491 /* MeCardParser.m in Sources */,
+				75BD18611ADB862300DE6491 /* NSString+Util.m in Sources */,
 				75BD18261ADB850700DE6491 /* SMSResultParser.m in Sources */,
 				75BD18071ADB850700DE6491 /* CBarcodeFormat.mm in Sources */,
 				75BD18311ADB850700DE6491 /* ZXingWidgetController1.m in Sources */,
@@ -805,6 +849,7 @@
 				75BD180C1ADB850700DE6491 /* MultiFormatReader.mm in Sources */,
 				75BD182E1ADB850700DE6491 /* VCardResultParser.m in Sources */,
 				75BD18271ADB850700DE6491 /* SMSTOResultParser.m in Sources */,
+				75BD18541ADB85F900DE6491 /* TUtils.m in Sources */,
 				75BD17FF1ADB850700DE6491 /* CallAction.m in Sources */,
 				75BD18121ADB850700DE6491 /* GeoParsedResult.m in Sources */,
 				75BD181E1ADB850700DE6491 /* EmailAddressResultParser.m in Sources */,
@@ -832,7 +877,9 @@
 				75BD180E1ADB850700DE6491 /* NSString+HTML.m in Sources */,
 				75BD18381ADB850700DE6491 /* ISBNResultParserTests.m in Sources */,
 				75BD18481ADB854D00DE6491 /* TGroupTableView.m in Sources */,
+				75BD18641ADB862300DE6491 /* UIView+Util.m in Sources */,
 				75BD18141ADB850700DE6491 /* ParsedResult.m in Sources */,
+				75BD184C1ADB85D600DE6491 /* TViewCell.m in Sources */,
 				75BD182C1ADB850700DE6491 /* URLResultParser.m in Sources */,
 				75BD18301ADB850700DE6491 /* ZXingWidgetController.m in Sources */,
 				75BD18231ADB850700DE6491 /* PlainEmailResultParser.m in Sources */,
@@ -840,6 +887,7 @@
 				75BD18171ADB850700DE6491 /* TelParsedResult.m in Sources */,
 				75BD18151ADB850700DE6491 /* ProductParsedResult.m in Sources */,
 				75BD182D1ADB850700DE6491 /* URLTOResultParser.m in Sources */,
+				75BD18601ADB862300DE6491 /* NSData+Util.m in Sources */,
 				75BD182B1ADB850700DE6491 /* UniversalResultParser.m in Sources */,
 				75BD18361ADB850700DE6491 /* EmailAddressResultParserTests.m in Sources */,
 				75BD18161ADB850700DE6491 /* SMSParsedResult.m in Sources */,
@@ -848,6 +896,8 @@
 				75BD18041ADB850700DE6491 /* SMSAction.m in Sources */,
 				75BD18281ADB850700DE6491 /* SMTPResultParser.m in Sources */,
 				75BD17EF1ADB850700DE6491 /* FMResultSet.m in Sources */,
+				75BD18631ADB862300DE6491 /* UILabel+DynamicHeight.m in Sources */,
+				75BD18621ADB862300DE6491 /* UIColor+BFPaperColors.m in Sources */,
 				75BD18331ADB850700DE6491 /* AddressBookAUResultParserTests.m in Sources */,
 				75BD181F1ADB850700DE6491 /* EmailDoCoMoResultParser.m in Sources */,
 				75BD18081ADB850700DE6491 /* DataMatrixReader.mm in Sources */,
