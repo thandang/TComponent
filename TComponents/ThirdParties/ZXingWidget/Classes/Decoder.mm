@@ -267,7 +267,7 @@ ZXingWidgetControllerCallback(Decoder* _decoder) : decoder(_decoder) {}
 
 - (void) dealloc {
   delegate = nil;
-  [image release];
+//  [image release];
   [subsetImage release];
   [readers release];
   [super dealloc];

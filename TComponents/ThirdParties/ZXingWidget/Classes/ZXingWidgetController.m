@@ -82,7 +82,6 @@
   [soundToPlay release];
   [overlayView release];
   [readers release];
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
   [super dealloc];
 }
 
@@ -141,12 +140,6 @@
   [[UIApplication sharedApplication] setStatusBarHidden:NO];
   [self.overlayView removeFromSuperview];
   [self stopCapture];
-}
-
-
-- (void) didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    NSLog(@"Did reveice meory warning in zxing");
 }
 
 - (CGImageRef)CGImageRotated90:(CGImageRef)imgRef
@@ -307,59 +300,21 @@
   self.captureSession = [[AVCaptureSession alloc] init];
   [self.captureSession release];
   self.captureSession.sessionPreset = AVCaptureSessionPresetMedium; // 480x360 on a 4
+
   [self.captureSession addInput:captureInput];
   [self.captureSession addOutput:captureOutput];
 
   [captureOutput release];
 
-/*
-  [[NSNotificationCenter defaultCenter]
-      addObserver:self
-         selector:@selector(stopPreview:)
-             name:AVCaptureSessionDidStopRunningNotification
-           object:self.captureSession];
-
-  [[NSNotificationCenter defaultCenter]
-      addObserver:self
-         selector:@selector(notification:)
-             name:AVCaptureSessionDidStopRunningNotification
-           object:self.captureSession];
-
-  [[NSNotificationCenter defaultCenter]
-      addObserver:self
-         selector:@selector(notification:)
-             name:AVCaptureSessionRuntimeErrorNotification
-           object:self.captureSession];
-
-  [[NSNotificationCenter defaultCenter]
-      addObserver:self
-         selector:@selector(notification:)
-             name:AVCaptureSessionDidStartRunningNotification
-           object:self.captureSession];
-
-  [[NSNotificationCenter defaultCenter]
-      addObserver:self
-         selector:@selector(notification:)
-             name:AVCaptureSessionWasInterruptedNotification
-           object:self.captureSession];
-
-  [[NSNotificationCenter defaultCenter]
-      addObserver:self
-         selector:@selector(notification:)
-             name:AVCaptureSessionInterruptionEndedNotification
-           object:self.captureSession];
-*/
 
   if (!self.prevLayer) {
     self.prevLayer = [AVCaptureVideoPreviewLayer layerWithSession:self.captureSession];
   }
   // NSLog(@"prev %p %@", self.prevLayer, self.prevLayer);
-    if(self.prevLayer.connection.supportsVideoOrientation) {
-        self.prevLayer.connection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
-    }
   self.prevLayer.frame = self.view.bounds;
   self.prevLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
   [self.view.layer addSublayer: self.prevLayer];
+
   [self.captureSession startRunning];
 #endif
 }
@@ -403,7 +358,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
   CGColorSpaceRelease(colorSpace);
 
   CGRect cropRect = [overlayView cropRect];
-  if (oneDMode) {
+
     // let's just give the decoder a vertical band right above the red line
     cropRect.origin.x = cropRect.origin.x + (cropRect.size.width / 2) - (ONE_D_BAND_HEIGHT + 1);
     cropRect.size.width = ONE_D_BAND_HEIGHT;
@@ -417,25 +372,9 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     cropRect.origin.y = 0.0;
     cropRect.size.width = CGImageGetWidth(capture);
     cropRect.size.height = CGImageGetHeight(capture);
-  }
 
-  // Won't work if the overlay becomes uncentered ...
-  // iOS always takes videos in landscape
-  // images are always 4x3; device is not
-  // iOS uses virtual pixels for non-image stuff
 
-  {
-    float height = CGImageGetHeight(capture);
-    float width = CGImageGetWidth(capture);
-
-    CGRect screen = UIScreen.mainScreen.bounds;
-    float tmp = screen.size.width;
-    screen.size.width = screen.size.height;;
-    screen.size.height = tmp;
-
-    cropRect.origin.x = (width-cropRect.size.width)/2;
-    cropRect.origin.y = (height-cropRect.size.height)/2;
-  }
+  
   CGImageRef newImage = CGImageCreateWithImageInRect(capture, cropRect);
   CGImageRelease(capture);
   UIImage *scrn = [[UIImage alloc] initWithCGImage:newImage];
@@ -476,15 +415,6 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
   self.prevLayer = nil;
   self.captureSession = nil;
 #endif
-}
-
-
-- (NSUInteger) supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
-}
-
-- (BOOL) shouldAutorotate {
-    return NO;
 }
 
 @end
