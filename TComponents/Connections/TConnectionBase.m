@@ -260,22 +260,22 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask {
             NSHTTPURLResponse *realResponse = (NSHTTPURLResponse *)task.response;
             NSDictionary *allHeaderField = [realResponse allHeaderFields];
             BOOL isUpdate = NO;
-            NSString *version = [AOUtils currentVersionNumber];
-            NSString *message = NSLocalizedString(@"update_available", nil);
-            if (allHeaderField) {
-                if (![[allHeaderField objectForKey:kX_App_Upgrade] isKindOfClass:[NSNull class]]) {
-                    isUpdate = [[allHeaderField objectForKey:kX_App_Upgrade] boolValue];
-                }
-                if (![[allHeaderField objectForKey:kX_App_Version] isKindOfClass:[NSNull class]]) {
-                    version = [allHeaderField objectForKey:kX_App_Version];
-                }
-                if ([allHeaderField objectForKey:kX_App_Message] && ![[allHeaderField objectForKey:kX_App_Message] isKindOfClass:[NSNull class]]) {
-                    message = [allHeaderField objectForKey:kX_App_Message];
-                }
-            }
-            self.httpCompleteAction(error, NO, error.code, isUpdate, version, message);
+//            NSString *version = [AOUtils currentVersionNumber];
+//            NSString *message = NSLocalizedString(@"update_available", nil);
+//            if (allHeaderField) {
+//                if (![[allHeaderField objectForKey:kX_App_Upgrade] isKindOfClass:[NSNull class]]) {
+//                    isUpdate = [[allHeaderField objectForKey:kX_App_Upgrade] boolValue];
+//                }
+//                if (![[allHeaderField objectForKey:kX_App_Version] isKindOfClass:[NSNull class]]) {
+//                    version = [allHeaderField objectForKey:kX_App_Version];
+//                }
+//                if ([allHeaderField objectForKey:kX_App_Message] && ![[allHeaderField objectForKey:kX_App_Message] isKindOfClass:[NSNull class]]) {
+//                    message = [allHeaderField objectForKey:kX_App_Message];
+//                }
+//            }
+//            self.httpCompleteAction(error, NO, error.code, isUpdate, version, message);
         }
-        [AOUtils hideWaitingView];
+//        [AOUtils hideWaitingView];
     }
     _dataTask = nil;
 }
@@ -284,19 +284,19 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask {
 - (void) URLSessionDidFinishEventsForBackgroundURLSession:(NSURLSession *)session {
     [_session getTasksWithCompletionHandler:^(NSArray *dataTasks, NSArray *uploadTasks, NSArray *downloadTasks) {
         if ([downloadTasks count] == 0) {
-            if ([kAppDelegate backgroundSessionCompletionHandler]) {
-                void (^completionHandler)() = [kAppDelegate backgroundSessionCompletionHandler];
-                [kAppDelegate setBackgroundSessionCompletionHandler:nil];
-                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                    completionHandler();
-                    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
-                    localNotification.fireDate = [NSDate date];
-                    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-                    localNotification.repeatInterval = 0;
-                    localNotification.alertBody = NSLocalizedString(@"file_downloaded", nil);
-                    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
-                }];
-            }
+//            if ([kAppDelegate backgroundSessionCompletionHandler]) {
+//                void (^completionHandler)() = [kAppDelegate backgroundSessionCompletionHandler];
+//                [kAppDelegate setBackgroundSessionCompletionHandler:nil];
+//                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//                    completionHandler();
+//                    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+//                    localNotification.fireDate = [NSDate date];
+//                    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+//                    localNotification.repeatInterval = 0;
+//                    localNotification.alertBody = NSLocalizedString(@"file_downloaded", nil);
+//                    [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
+//                }];
+//            }
         }
         
     }];
@@ -319,20 +319,20 @@ didReceiveResponse:(NSURLResponse *)response
         NSHTTPURLResponse *realResponse = (NSHTTPURLResponse *)dataTask.response;
         NSDictionary *allHeaderField = [realResponse allHeaderFields];
         BOOL isUpdate = NO;
-        NSString *version = [AOUtils currentVersionNumber];
-        NSString *message = NSLocalizedString(@"update_available", nil);
-        if (allHeaderField) {
-            if (![[allHeaderField objectForKey:kX_App_Upgrade] isKindOfClass:[NSNull class]]) {
-                isUpdate = [[allHeaderField objectForKey:kX_App_Upgrade] boolValue];
-            }
-            if (![[allHeaderField objectForKey:kX_App_Version] isKindOfClass:[NSNull class]]) {
-                version = [allHeaderField objectForKey:kX_App_Version];
-            }
-            if ([allHeaderField objectForKey:kX_App_Message] && ![[allHeaderField objectForKey:kX_App_Message] isKindOfClass:[NSNull class]]) {
-                message = [allHeaderField objectForKey:kX_App_Message];
-            }
-        }
-        self.httpCompleteAction(data, YES, 200, isUpdate, version, message);
+//        NSString *version = [AOUtils currentVersionNumber];
+//        NSString *message = NSLocalizedString(@"update_available", nil);
+//        if (allHeaderField) {
+//            if (![[allHeaderField objectForKey:kX_App_Upgrade] isKindOfClass:[NSNull class]]) {
+//                isUpdate = [[allHeaderField objectForKey:kX_App_Upgrade] boolValue];
+//            }
+//            if (![[allHeaderField objectForKey:kX_App_Version] isKindOfClass:[NSNull class]]) {
+//                version = [allHeaderField objectForKey:kX_App_Version];
+//            }
+//            if ([allHeaderField objectForKey:kX_App_Message] && ![[allHeaderField objectForKey:kX_App_Message] isKindOfClass:[NSNull class]]) {
+//                message = [allHeaderField objectForKey:kX_App_Message];
+//            }
+//        }
+//        self.httpCompleteAction(data, YES, 200, isUpdate, version, message);
     }
 }
 

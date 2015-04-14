@@ -12,7 +12,7 @@ typedef void (^AOProgressBlock)(float progress);
 typedef void (^AOCompleteBlock)(id data, BOOL success);
 typedef void (^AOHTTPCompleteBlock)(id data, BOOL success, NSInteger errorCode, BOOL isUpdate, NSString *version, NSString *message);
 
-@interface TConnectionBase : NSOperation<NSURLSessionDelegate, NSURLSessionDownloadDelegate, NSURLSessionTaskDelegate> {
+@interface TConnectionBase : NSOperation<NSURLSessionDelegate, NSURLSessionDownloadDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate> {
     NSURLSession                *_session;
     NSURLSessionDownloadTask    *_downloadTask;
     NSURLSessionDataTask        *_dataTask;

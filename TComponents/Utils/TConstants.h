@@ -7,13 +7,17 @@
 //
 
 
-/************** Key **************/
+/************** Enum **************/
 typedef enum {
     HTTPREQUEST_GET = 0,
     HTTPREQUEST_POST = 1,
     DOWNLOAD,
     HTTPREQUEST_PUT
 } REQUEST_TYPE;
+
+
+/************** Key **************/
+#define POSPHOTO_FOLDER [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"PosPhotos"]
 
 /************** URL **************/
 
@@ -69,4 +73,10 @@ Stuff; \
 _Pragma("clang diagnostic pop") \
 } while (0)
 
+#define kDisableLog         false
+#ifdef DEBUG
+#define DEBUG_LOG(fmt, ...) if(!kDisableLog) NSLog((@"%s [Line %d]\n" fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define DEBUG_LOG
+#endif
 
